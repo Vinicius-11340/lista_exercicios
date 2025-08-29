@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 2 - Tabuada</title>
+    <title>Exercício 3 - Positivo/Negativo </title>
 </head>
 
 
 <body>
 
-    <h1>Exercício 2 - Tabuada</h1>
+    <h1>Exercício 3 - Positivo/Negativo </h1>
     <form method="post">
         <label for="numero">Digite o primeiro número:</label>
         <input type="number" id="numero_1" name="numero_1" required>
         <br>
-        <button type="submit" name="verificar">verificar</button>
+        <button type="submit" name="verificar">Verificar</button>
     </form>
 
      <?php
@@ -25,8 +25,13 @@
                 echo "Número inválido!";
                 
             } else {
-                for ($i = 1; $i <= 10; $i++) {
-             echo "$numero_1 x $i =" . ($numero_1 * $i) . "<br>"; 
+                if ($numero_1 > 0) {
+                    echo "O número $numero_1 é <strong>positivo</strong>.";
+                } else {
+                    echo "O número $numero_1 é <strong>negativo</strong>.";
+                }   
+                if ($numero_1 == 0) {
+                    echo "O número é zero.";
                 }
             }
         }
