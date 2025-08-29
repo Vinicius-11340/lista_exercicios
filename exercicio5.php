@@ -28,15 +28,7 @@
                 echo "Número inválido!";
             } else {
                 
-                    return $soma;
-                }
-                $soma1 = somaDivisores($numero_1);
-                $soma2 = somaDivisores($numero_2);
-                if ($soma1 == $numero_2 && $soma2 == $numero_1) {
-                    echo "$numero_1 e $numero_2 são números amigos!";
-                } else {
-                    echo "$numero_1 e $numero_2 não são números amigos.";
-                }
+                   
             }
         }
     }

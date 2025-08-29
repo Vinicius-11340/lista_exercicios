@@ -25,9 +25,8 @@
                 echo "Número inválido!";
                 
             } else {
-                for ($i = 1; $i <= 10; $i++) {
-             echo "$numero_1 x $i =" . ($numero_1 * $i) . "<br>"; 
-                }
+               
+                
             }
         }
     }
