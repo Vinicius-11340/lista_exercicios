@@ -27,12 +27,12 @@
             } else {
                 if ($numero_1 > 0) {
                     echo "O número $numero_1 é <strong>positivo</strong>.";
-                } else {
+                } else if ($numero_1 < 0) {
                     echo "O número $numero_1 é <strong>negativo</strong>.";
-                }   
-                if ($numero_1 == 0) {
-                    echo "O número é zero.";
+                } else {
+                    echo "O número $numero_1 é <strong>zero</strong>.";
                 }
+                
             }
         }
     }
